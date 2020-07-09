@@ -1,0 +1,32 @@
+.rounded-circle{
+    border-radius: 50%;
+}
+.hr-cool{
+    width:50%;border-bottom:solid 1px lightgrey;
+}
+.font-ch-style{
+    font-family: 'Acme', sans-serif;
+}
+.item-list-heading{
+    font-family: 'Walter Turncoat', cursive;
+}
+body{
+  margin: 0;
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.para-x {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mg-bit-2{
+    margin: 15px 0;
+}
+.mg-bit-1{
+    margin: 4px 0;
+}

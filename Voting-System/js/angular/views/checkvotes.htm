@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="jumbotron">
+		<h1>Party Winning : {{partyWinning()}}</h1>
+	</div>
+</div>
+
+<div class="container" ng-show="logInStatus">
+    <div class="row">
+        <div class="col-md-2">
+        	<div class="container">
+				<button class="btn btn-outline-danger" ng-click="clearData()">Clear Votes</button>
+			</div>
+        </div>
+        <div class="col-md-8">
+                <canvas id="myChart" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-2">
+			<button class="btn btn-primary w-75" ng-click="changeChart('bar')">Bar Chart</button>
+			<br>
+        	<br>
+        	<button class="btn btn-danger w-75" ng-click="changeChart('doughnut')">Pie Chart</button>
+        </div>
+	</div>
+</div>
+
+<div class="container" ng-show="!logInStatus">
+
+	<form class="w-100">
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" ng-model="admin_email" aria-describedby="emailHelp" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" ng-model="admin_pass" placeholder="Password">
+		</div>
+		<button type="submit" class="btn btn-primary" ng-click="adminLogin()">Submit</button>
+	</form>
+</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Miltonian+Tattoo|Overlock|Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="js/functions/cus_tweeks.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="js/dependencies/angular-routing.js"></script>
+    <script src="js/app/modules/foodModule.js"></script>
+    <script src="js/app/routing.js"></script>
+    <script src="js/app/controllers/app.controller.js"></script>
+    <script src="js/app/services/getProductService.js"></script>
+    <link rel="stylesheet" href="css/dataSet.css">
+</head>
+<body ng-app="FOOD_MODULE" ng-controller="mainCtrl">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="images/brand.jpg" class="rounded-circle" width="30" height="30" alt=""> Infinite Pyramid
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!blog">Blogs</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="para-x" style="background-image:url('images/para-1.jpeg')">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 push-md-9 bd-sidebar mg-bit-2">
+                <form class="bd-search hidden-sm-down">
+                    <input type="text" class="form-control " id="search-input" placeholder="Search...">
+                    <div class="dropdown-menu bd-search-results" id="search-results"></div>
+                </form>
+                <div class="list-group mg-bit-2">
+                    <a href="#!specialToday"><button type="button" class="list-group-item list-group-item-action">Todays Special</button></a>
+                    <a href="#!drinks"><button type="button" class="list-group-item list-group-item-action">Drinks</button></a>
+                    <a href="#!fastfood"><button type="button" class="list-group-item list-group-item-action">FastFood</button></a>
+                    <a href="#"><button type="button" class="list-group-item list-group-item-action">Lunch</button></a>
+                    <a href="#"><button type="button" class="list-group-item list-group-item-action" disabled>Dinner</button></a>
+                    <a href="#!order"><button type="button" class="list-group-item list-group-item-action active">Order Page</button></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 pull-md-3 bd-content mg-bit-2">
+                <div class="container" ng-view>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-cool">
+    <footer class="container-fluid">
+      <div class="row" >
+        <div class="container text-center">
+            <p>Created by @ <a href="https://www.pastebin.com/u/n0va_sa">dude.sourav</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src= "https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</body>
+</html>

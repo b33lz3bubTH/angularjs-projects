@@ -1,0 +1,54 @@
+<header id="header" class="alt selector-x defaultHeader" style="width:100%;" ng-click="changeBanner()">
+	<div class="inner">
+		<h1 ><i class="fa fa-ship" aria-hidden="true"></i>{{ siteName }}</h1>
+		<h3>Fish Whole Seller & Commission Agent</h3>
+	</div>
+</header>
+
+<!-- Wrapper -->
+<div id="wrapper">
+	
+
+	<!-- Main -->
+		<br/>
+		<h2 class="center header">Popular Products</h2>
+		<hr style="width: 100%" class="center">
+		<br/>
+		<div class="row">
+		  <div class="col s12 m12 l4" ng-repeat="item in products">
+		    <div class="card">
+		      <div class="card-image">
+		        <img ng-src="{{ item.imgSrc }}">    
+		      </div>
+		      <div class="card-content">
+		        <span class="card-title activator" style="text-overflow: ellipsis;white-space: nowrap;
+  overflow: hidden;"><span style="font-size: 25px; font-weight: 600; color:black">{{ item.name | uppercase}}</span></span>
+		        <!-- <h5>{{ item.price | currency:'&#8360' }}</h5> -->
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- <section id="cta" class="main special">
+			<ul class="actions">
+				<li><a href="#!products" class="button big">View More</a></li>
+			</ul>
+		</section> -->
+	<!-- CTA -->
+
+</div>
+<header id="header" class="alt" style="width:100%; background-image: url('https://www.directseafoods.co.uk/wp-content/uploads/fish-and-seafood-banner-1.jpg');" >
+	<div class="inner">
+		<h1>Fresh Fishes</h1>
+		<h3>Fish Whole Seller & Commission Agent</h3>
+	</div>
+</header>
+<div id="wrapper">
+		<section id="cta" class="main special">
+			<h1>Fish Ecommerce Store</h1>
+			<p>We currently delivers different kind of fishes to the Kolkata region. Connect with us to get fresh and large varity of fishes.
+			We currently delivers different kind of fishes to the Kolkata region. Connect with us to get fresh and large varity of fishes.</p>
+			<ul class="actions">
+				<li><a href="#!about" class="button big">Contact Us</a></li>
+			</ul>
+		</section>
+</div>

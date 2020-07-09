@@ -1,0 +1,32 @@
+<div class="container text-center">
+    <div ng-click="checkVote()">
+        <div ng-if="!voteDisable">
+            <h3>Caste Your Vote: {{loggedStu}}</h3>
+            </div>
+            <div ng-if="voteDisable">
+            <h3>You Have Casted your Votes Already: {{loggedStu}}</h3>
+            <h1>THANK YOU</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-if="!voteDisable">
+    <div class="card text-center my-3" ng-repeat="x in candidates">
+        <div class="row my-2 mx-2">
+
+            <div class="col-md-4">
+                <img src="/partysymbol/{{x.symbol}}" class="img-responsive img-thumbnail w-100">
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6 my-4">
+                <div class="container">
+                    <h3>{{x.name | uppercase}}</h5>
+                    <h4>{{x.party_name | uppercase}}</h4>
+                    <h5>{{x.maifesto}}</h5>
+                    <hr class="w-75">
+                    <button class="btn btn-outline-success w-75" ng-click="vote(x.party_code)" ng-disabled="voteDisable">VOTE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

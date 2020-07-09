@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ecommerce Site</title>
+
+	<!-- <link rel="stylesheet" href="/assest/bootstrap.css"> -->
+	<link rel="stylesheet" href="/assest/meterialize.css">
+
+
+	<script src="/assest/angular.js"></script>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="/assest/router.js"></script>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		body {
+		    display: flex;
+		    flex-direction: column;
+		  }
+
+		  #main {
+		    flex: 1 0 auto;
+		    min-height: 50vh;
+		  }
+		  .circular--landscape {
+			  display: inline-block;
+			  position: relative;
+			  width: 200px;
+			  height: 200px;
+			  overflow: hidden;
+			  border-radius: 50%;
+			}
+		a:hover {
+		  background-color: rgba(0,0,0,0.1);
+		}
+		.newHeader{
+			background-image: url("https://previews.123rf.com/images/somegirl/somegirl1708/somegirl170800089/84059830-fresh-fish-tilapia-ready-to-cook-raw-fish-with-herbs-lemon-salt-pepper-on-wooden-rustic-background-i.jpg") !important;
+		}
+		.defaultHeader{
+			background-image: url('assest/images/2.jpeg');
+		}
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<nav class="teal darken-2" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><i class="fa fa-ship" aria-hidden="true"></i> {{siteName}}</a>
+		  <ul class="right hide-on-med-and-down">
+			<li><a href="#!products">Products</a></li>
+			<li><a href="#!about">About Us</a></li>
+		  </ul>
+
+		  <ul id="nav-mobile" class="sidenav">
+			<li><a href="#!about">Contact Us</a></li>
+		  </ul>
+		  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</div>
+	  </nav>
+
+
+	<ul class="sidenav" id="mobile-nav">
+		<li><h3><a href="#!about">About US</a></h3></li>
+		<li><h3><a href="#!products">Products</a><h3></li>
+	</ul>
+
+	<div>
+		<ng-view></ng-view>
+	</div>
+	<footer class="page-footer teal darken-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				<ul class="icons">
+					<li><a href="#"><i class="fa fa-facebook-official small" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter-square small" aria-hidden="true"></i></i></a></li>
+					<li><a href="#"><i class="fa fa-envelope small " aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-whatsapp small" aria-hidden="true"></i></a></li>
+				</ul>
+              </div>
+              <!-- <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!products">Products</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!about">About Us</a></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Copyright
+            </div>
+          </div>
+        </footer>
+
+
+	<script src="app/main.js"></script>
+	<script src="app/router_config.js"></script>
+	<script src="/assest/jquery.js"></script>
+	<script src="/assest/popper.js"></script>
+	<script src="/assest/meterialize.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+		 		$('.sidenav').sidenav();
+				setTimeout(function(){
+					$('.slider').slider();
+				}, 2000);
+		 	});
+
+	</script>
+</body>
+</html>

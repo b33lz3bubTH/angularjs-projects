@@ -1,0 +1,17 @@
+<h1 class="text-center text-primary item-list-heading">{{title}}</h1>
+<hr class="hr-cool">
+<div class="card-deck">
+  <div class="col-md-6 col-lg-4 col-sm-6" ng-repeat="item in food">
+    <div class="card mg-bit-1">
+      <img class="card-img-top" src="{{ item.img }}" style="width:100%">
+      <div class="card-body font-ch-style" style="padding:8px;">
+        <h5 class="card-title text-truncate">Name: <a href="#!detail/{{item.icode}}">{{item.name}}</a></h5>
+        <p class="card-text">Price: <span style="font-size:2rem">{{item.price}}</span>$</p>
+      </div>
+      <div class="card-footer">
+        <button class="w-100 btn btn-md btn-outline-success" ng-if="isSelected(item.icode)===0" ng-click="selectProduct(item)">Add to Cart</button>
+        <button class="w-100 btn btn-md btn-success text-white" ng-if="isSelected(item.icode)===1" ng-click="selectProduct(item)">Selected</button>
+      </div>
+    </div>
+  </div>
+</div>
