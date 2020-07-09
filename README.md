@@ -1,5 +1,5 @@
 # angularjs-projects
-All AngularJs Projects. (i dont do angularjs now.) 
+All AngularJs Projects. (i dont do angularjs now.) Done a long time ago, not maintained.
 
 
 # Catelog site - Flexible for any Catelog based site req
